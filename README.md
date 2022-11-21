@@ -4,7 +4,7 @@ This repository is for traffic lights system with an on-demand crosswalk button.
 Crosswalk buttons let the signal operations know that someone is planning to cross the street, so the light adjusts, giving the pedestrian enough time to get across.\
 The system is developed using Atmel Studio and simulation is done on Proteus 8.
 
-Hardware requirements:\
+Hardware requirements:
 
     - ATmega32 microcontroller
     - One push button connected to INT0 pin for pedestrian
@@ -12,12 +12,12 @@ Hardware requirements:\
     - Three LEDs for pedestrians - Green, Yellow, and Red, connected on port B, pins 0, 1, and 2
 
 Software requirements:\
-In normal mode:\
+In normal mode:
 
     - Cars' LEDs will be changed every five seconds starting from Green then yellow then red then yellow then Green.
     - The Yellow LED will blink for five seconds before moving to Green or Red LEDs.
 
-In pedestrian mode:\
+In pedestrian mode:
 
     - Change from normal mode to pedestrian mode when the pedestrian button is pressed.
     - If pressed when the cars' Red LED is on, the pedestrian's Green LED and the cars' Red LEDs will be on for five seconds, this means that pedestrians can cross the street while the pedestrian's Green LED is on.
